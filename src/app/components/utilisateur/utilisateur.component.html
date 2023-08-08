@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                    <strong>LISTE DES UTILISATEURS</strong>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>NOM</th>
+                                <th>PRENOM</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let utilisateur of utilisateurs">
+                                <td>{{ utilisateur.id }}</td>
+                                <td>{{ utilisateur.nom }}</td>
+                                <td>{{ utilisateur.prenom }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

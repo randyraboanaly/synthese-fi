@@ -1,0 +1,78 @@
+.login,
+.inscription,
+.recuperation {
+    min-height: 100vh;
+    background: url('./assets/img/fond1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.login-content {
+    width: 75%;
+    min-height: 50vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 2.5px silver;
+}
+
+.login-content-left {
+    background: url('./assets/img/bg1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-content-left-bg {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    min-height: 25vh;
+}
+
+.login-content-right {
+    background-color: whitesmoke;
+}
+
+.login-content-right-position {
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+    padding: 5%;
+}
+
+.btn-cegape {
+    margin: auto;
+    border-radius: 100px;
+}
+
+.icone-input {
+    border-radius: 0;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.input-cegape {
+    border-radius: 0;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.input-cegape:focus {
+    box-shadow: none;
+    border-radius: 0px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: solid 1px silver;
+}
+
+.img-cegape {
+    width: 150px;
+    height: 50px;
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+}
+
+.fa-cegape {
+    width: 25px !important;
+}

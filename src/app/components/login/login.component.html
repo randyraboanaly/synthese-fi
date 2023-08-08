@@ -1,0 +1,45 @@
+<div class='container-fluid login'>
+    <div class='row login-content'>
+        <div class='col-sm-7 login-content-left'>
+            <div class='row login-content-left-bg'>
+                <img src="../../../assets/img/logo_white.png" class='img-cegape' alt='Logo CEGAPE' />
+            </div>
+        </div>
+        <div class='col-sm-5 login-content-right'>
+            <div class='login-content-right-position'>
+                <div class="mb-3">
+                    <h1 class='text-center'>IDENTIFICATION</h1>
+                </div>
+                <br />
+                <form name="form" (ngSubmit)="onSubmit()" #f="ngForm" novalidate>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text icone-input" id="basic-addon1">
+                                &nbsp;<i class="fa fa-user fa-cegape" aria-hidden="true"></i>&nbsp;
+                            </span>
+                        </div>
+                        <input class="form-control input-cegape" type="text" placeholder="Nom d'utilisateur" [(ngModel)]="form.username" name="username" />
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text icone-input" id="basic-addon1">
+                                &nbsp;<i class="fa fa-key fa-cegape" aria-hidden="true"></i>&nbsp;
+                            </span>
+                        </div>
+                        <input class="form-control input-cegape" type="password" placeholder="Mot de passe" [(ngModel)]="form.password" name="password" />
+                    </div>
+                    <div class="input-group mb-3">
+                        <button class='btn btn-primary w-100 btn-cegape btn-sm'>Se connecter</button>
+                    </div>
+                    <div class="input-group mb-3 text-end">
+                        <a class='text-end' href='/recuperation'>Mot de passe oublié?</a>
+                    </div>
+                </form>
+                <hr />
+                <div class="input-group mb-3">
+                    <a class='btn btn-success w-50 btn-cegape btn-sm' href='/inscription'>Créer un compte</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
