@@ -1,0 +1,26 @@
+.img-logo{
+    width: 50%;
+}
+
+.username{
+    border-radius: 5px;
+}
+
+.drop-menu{
+    background-color: black;
+}
+
+
+.drop-menu li a{
+    color: silver;
+    text-transform: uppercase;
+}
+
+.drop-menu li a:hover{
+    background-color: black;
+    color: white;
+}
+.hr-menu{
+    color: silver;
+    background-color: #212529;
+}

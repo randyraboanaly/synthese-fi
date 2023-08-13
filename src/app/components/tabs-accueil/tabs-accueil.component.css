@@ -1,0 +1,20 @@
+.tabs-accueil-li{
+    margin-right: 0.1%;
+}
+.nav-link{
+    background: #454545;
+    color: gray;
+    width: 250px;
+    padding: 7.5%;
+    text-align: center;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    font-size: 125%;
+}
+
+.nav-item > .active{
+    background-color: white !important;
+    color: black !important;
+}

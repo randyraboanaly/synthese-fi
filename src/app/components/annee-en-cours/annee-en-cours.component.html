@@ -1,0 +1,29 @@
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link annee-en-cours-li active" data-bs-toggle="pill" href="#requetes_pilotage_ms">
+            REQUETES PILOTAGE MS
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link annee-en-cours-li" data-bs-toggle="pill" href="#rapport_de_situation">
+            RAPPORT DE SITUATION
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link annee-en-cours-li" data-bs-toggle="pill" href="#suivi_previsionnel">
+            SUIVI PREVISIONNEL
+        </a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane container-fluid active" id="requetes_pilotage_ms">
+        <app-requetes-pilotages-ms></app-requetes-pilotages-ms>
+    </div>
+    <div class="tab-pane container-fluid fade" id="rapport_de_situation">
+        <app-rapport-de-situation></app-rapport-de-situation>
+    </div>
+    <div class="tab-pane container-fluid fade" id="suivi_previsionnel">
+        <app-suivi-previsionnel></app-suivi-previsionnel>
+    </div>
+</div>

@@ -1,3 +1,7 @@
+body {
+    background-color: #212529;
+}
+
 .login,
 .inscription,
 .recuperation {
@@ -75,4 +79,85 @@
 
 .fa-cegape {
     width: 25px !important;
+}
+
+.accueil{
+    margin-bottom: 2.5%;
+}
+
+.w-95 {
+    width: 95%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+
+.pad-1 {
+    padding: 1%;
+}
+
+.pad-2 {
+    padding: 2%;
+}
+
+.pad-3 {
+    padding: 3%;
+}
+
+.pad-4 {
+    padding: 4%;
+}
+
+.pad-5 {
+    padding: 5%;
+}
+
+.mt-1 {
+    margin-top: 1%;
+}
+
+.mt-2 {
+    margin-top: 2%;
+}
+
+.mt-3 {
+    margin-top: 3%;
+}
+
+.mt-4 {
+    margin-top: 4%;
+}
+
+.mt-5 {
+    margin-top: 5%;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.card-titre {
+    border-bottom: solid 1px #6c757d;
+    padding: 0.5%;
+    width: 25%;
+    color: #6c757d;
+}
+
+.no-border-radius{
+    border-radius: 0 !important;
+}
+
+select:focus, input:focus{
+    box-shadow: none !important;
+    border: solid 1px #6c757d !important;
 }

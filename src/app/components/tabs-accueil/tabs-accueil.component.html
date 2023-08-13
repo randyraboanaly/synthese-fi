@@ -1,0 +1,38 @@
+<div class="bg-dark">
+    <ul class="nav nav-pills w-95 m-auto">
+        <li class="nav-item tabs-accueil-li">
+            <a class="nav-link active" data-bs-toggle="pill" href="#accueil">
+                <i class="fa fa-home" aria-hidden="true"></i> ACCUEIL
+            </a>
+        </li>
+        <li class="nav-item tabs-accueil-li">
+            <a class="nav-link" data-bs-toggle="pill" href="#annee_en_cours">
+                <i class="fa fa-lock" aria-hidden="true"></i> ANNEE EN COURS
+            </a>
+        </li>
+        <li class="nav-item tabs-accueil-li">
+            <a class="nav-link" data-bs-toggle="pill" href="#projections">
+                <i class="fa fa-lock" aria-hidden="true"></i> PROJECTIONS
+            </a>
+        </li>
+        <li class="nav-item tabs-accueil-li">
+            <a class="nav-link" data-bs-toggle="pill" href="#parametrages">
+                <i class="fa fa-lock" aria-hidden="true"></i> PARAMETRAGES
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="tab-content">
+    <div class="tab-pane container-fluid bg-white w-95 pad-1 active" id="accueil">
+        <app-accueil-contenu></app-accueil-contenu>
+    </div>
+    <div class="tab-pane container-fluid bg-white w-95 pad-1 fade" id="annee_en_cours">
+        <app-annee-en-cours></app-annee-en-cours>
+    </div>
+    <div class="tab-pane container-fluid bg-white w-95 pad-1 fade" id="projections">
+        <app-projections></app-projections>
+    </div>
+    <div class="tab-pane container-fluid bg-white w-95 pad-1 fade" id="parametrages">
+        <app-parametrages></app-parametrages>
+    </div>
+</div>
