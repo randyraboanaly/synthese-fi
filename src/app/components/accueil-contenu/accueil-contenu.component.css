@@ -1,7 +1,3 @@
-.accueil-contenu-fa {
-    padding: 2%;
-}
-
 .ressources-content-h {
     min-height: 10em;
 }
@@ -22,11 +18,11 @@ fieldset {
     border: 1px solid #cccc;
 }
 
-.acces-rapide{
+.acces-rapide {
     border: solid 1px black;
 }
 
-.acces-titre{
+.acces-titre {
     width: 6.5em;
     margin-top: -0.9em;
     background-color: white;
@@ -39,10 +35,6 @@ fieldset {
 
 .obligatoire {
     color: red;
-}
-
-.bg-gray {
-    background-color: silver;
 }
 
 .btn-switch {

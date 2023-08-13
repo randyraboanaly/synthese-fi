@@ -14,12 +14,13 @@ export class AccueilComponent {
   ) { }
 
   ngOnInit() {
-    if (!this.storageService.isLoggedIn()) {
+    /*if (!this.storageService.isLoggedIn()) {
       this.router.navigate(['/login']);
     }
     else {
       this.router.navigate(['/accueil']);
-    }
+    }*/
+    this.router.navigate(['/accueil']);
   }
   deconnexion(): void {
     console.log("deconnexion");

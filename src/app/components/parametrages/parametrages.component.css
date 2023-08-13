@@ -1,0 +1,30 @@
+
+.sort-parametrages:hover {
+    cursor: pointer;
+}
+
+.liste-param{
+    margin-top: -1em;
+    list-style: none;
+    overflow-y: scroll;
+    max-height: 30em;
+}
+
+.liste-param .data{
+    background-color: rgba(0,0,0,0.05);
+    margin-top: 0.5%;
+    padding: 1.5%;
+}
+
+.liste-param .data:hover{
+    background-color: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.liste-param .active{
+    border-left: solid 2px rgba(0,0,0,0.5);
+}
+
+.search-param{
+    list-style: none;
+}

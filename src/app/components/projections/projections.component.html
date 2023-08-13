@@ -1,1 +1,24 @@
-<p>projections works!</p>
+<div class="mt-5">
+    <ul class="nav nav-pills w-98 m-auto tabs">
+        <li class="nav-item">
+            <a class="nav-link no-border-radius nav-link-tabs active" data-bs-toggle="pill"
+                href="#campagnes">
+                Campagnes
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link no-border-radius nav-link-tabs" data-bs-toggle="pill"
+                href="#archives">
+                Archives
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="tab-content tabs-content">
+    <div class="tab-pane container-fluid bg-white w-100 pad-1 active" id="campagnes">
+        <app-campagnes></app-campagnes>
+    </div>
+    <div class="tab-pane container-fluid bg-white w-100 pad-1 fade" id="archives">
+        <app-archives></app-archives>
+    </div>
+</div>

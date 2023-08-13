@@ -1,0 +1,154 @@
+<div class="container-fluid">
+    <div class="row mt-2">
+        <div class="col-sm-1">
+            <span class="align-middle bg-primary btn no-border-radius text-white">Rechercher par : </span>
+        </div>
+        <div class="col-sm-1">
+            <select class="form-select no-border-radius">
+                <option>Année</option>
+            </select>
+        </div>
+        <div class="col-sm-1 text-center">
+            <span class="align-middle text">Pour</span>
+        </div>
+        <div class="col-sm-1">
+            <select class="form-select no-border-radius">
+                <option>Année</option>
+            </select>
+        </div>
+        <div class="col-sm-1">
+            <select class="form-select no-border-radius">
+                <option>Code</option>
+            </select>
+        </div>
+        <div class="col-sm-1">
+            <select class="form-select no-border-radius">
+                <option>Statut</option>
+            </select>
+        </div>
+        <div class="col-sm-1">
+            <button type="button" class="btn btn-outline-secondary w-100 no-border-radius">Rechercher</button>
+        </div>
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-2">
+            <button type="button" class="btn btn-outline-secondary w-100 no-border-radius" data-bs-toggle="modal"
+                data-bs-target="#creer_campagne">
+                <i class="fa fa-plus" aria-hidden="true"></i> Créer une campagne
+            </button>
+        </div>
+        <div class="col-sm-2">
+            <button type="button" class="btn btn-outline-secondary w-100 no-border-radius">
+                <i class="fa fa-plus" aria-hidden="true"></i> Créer un budget rectificatif
+            </button>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-sm-12 table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="bg-gray">
+                    <tr>
+                        <th class="w-20">Année</th>
+                        <th class="w-10">Code</th>
+                        <th class="w-20">Libellé</th>
+                        <th class="w-20">Auteur</th>
+                        <th class="w-20">Statut</th>
+                        <th class="w-10">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023 pour 2024</td>
+                        <td>01</td>
+                        <td>Campagne prévision hautes</td>
+                        <td>Monique PELLETIER</td>
+                        <td>Brouillon</td>
+                        <td>
+                            <i class="fa fa-eye contenu-fa" aria-hidden="true"></i>
+                            <i class="fa fa-edit contenu-fa" aria-hidden="true"></i>
+                            <i class="fa fa-trash contenu-fa" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2023 pour 2024</td>
+                        <td>01</td>
+                        <td>Campagne prévisions basses</td>
+                        <td>Monique PELLETIER</td>
+                        <td>Brouillon</td>
+                        <td>
+                            <i class="fa fa-eye contenu-fa" aria-hidden="true"></i>
+                            <i class="fa fa-edit contenu-fa" aria-hidden="true"></i>
+                            <i class="fa fa-trash contenu-fa" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2023 pour 2024</td>
+                        <td>01</td>
+                        <td>Campagne prévisions XX</td>
+                        <td>Monique PELLETIER</td>
+                        <td>Brouillon</td>
+                        <td>
+                            <i class="fa fa-eye contenu-fa" aria-hidden="true"></i>
+                            <i class="fa fa-edit contenu-fa" aria-hidden="true"></i>
+                            <i class="fa fa-trash contenu-fa" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2023 pour 2024</td>
+                        <td>03</td>
+                        <td>Campagne prévisions XXX</td>
+                        <td>Monique PELLETIER</td>
+                        <td>Brouillon</td>
+                        <td>
+                            <i class="fa fa-eye contenu-fa" aria-hidden="true"></i>
+                            <i class="fa fa-edit contenu-fa" aria-hidden="true"></i>
+                            <i class="fa fa-trash contenu-fa" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2023 pour 2024</td>
+                        <td>03</td>
+                        <td>Campagne Delta</td>
+                        <td>Monique PELLETIER</td>
+                        <td>
+                            En vigueur
+                            <i class="fa fa-check float-end" aria-hidden="true"></i>
+                        </td>
+                        <td>
+                            <i class="fa fa-eye contenu-fa" aria-hidden="true"></i>
+                            <i class="fa fa-edit contenu-fa" aria-hidden="true"></i>
+                            <i class="fa fa-trash contenu-fa" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="creer_campagne" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-3"><button type="button" class="btn btn-secondary w-100 no-border-radius"
+                                data-bs-dismiss="modal">Close</button></div>
+                        <div class="col-sm-3"><button type="button" class="btn btn-primary w-100 no-border-radius">Save changes</button>
+                        </div>
+                        <div class="col-sm-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

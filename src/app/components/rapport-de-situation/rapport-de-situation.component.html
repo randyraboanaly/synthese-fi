@@ -1,9 +1,24 @@
-<div class="card border-dark w-100 mt-3">
-    <div class="card-body text-dark">
-        <div class="row">
-            <div class="col-sm-12">
-                <p>rapport-de-situation works!</p>
-            </div>
-        </div>
+<div class="mt-4">
+    <ul class="nav nav-pills w-98 m-auto tabs">
+        <li class="nav-item">
+            <a class="nav-link no-border-radius nav-link-tabs active" data-bs-toggle="pill"
+                href="#portefeuille_emploi">
+                Portefeuille d'emplois
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link no-border-radius nav-link-tabs" data-bs-toggle="pill"
+                href="#anticipation_fin_dossier">
+                Anticipation des fins de dossier
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="tab-content tabs-content">
+    <div class="tab-pane container-fluid bg-white w-100 pad-1 active" id="portefeuille_emploi">
+        <app-portefeuille-emplois></app-portefeuille-emplois>
+    </div>
+    <div class="tab-pane container-fluid bg-white w-100 pad-1 fade" id="anticipation_fin_dossier">
+        <app-anticipation-fin-dossier></app-anticipation-fin-dossier>
     </div>
 </div>

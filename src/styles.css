@@ -81,8 +81,24 @@ body {
     width: 25px !important;
 }
 
-.accueil{
+.accueil {
     margin-bottom: 2.5%;
+}
+
+.w-99 {
+    width: 99%;
+}
+
+.w-98 {
+    width: 98%;
+}
+
+.w-97 {
+    width: 97%;
+}
+
+.w-96 {
+    width: 96%;
 }
 
 .w-95 {
@@ -152,11 +168,68 @@ body {
     color: #6c757d;
 }
 
-.no-border-radius{
+.no-border-radius {
     border-radius: 0 !important;
 }
 
-select:focus, input:focus{
+select:focus,
+input:focus {
     box-shadow: none !important;
     border: solid 1px #6c757d !important;
+}
+
+.tabs-content {
+    border: solid 1px black;
+}
+
+.nav-link-tabs {
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+    color: black;
+}
+
+.tabs>.nav-item>.active {
+    background-color: #ccc !important;
+    color: black !important;
+}
+
+.tabs>.nav-item>a {
+    width: 20em;
+    text-align: center;
+}
+
+.tabs>.nav-item>a:hover {
+    color: black;
+}
+
+.fa-check {
+    background-color: green;
+    border-radius: 100%;
+    color: white;
+    padding: 1%;
+}
+
+.contenu-fa {
+    padding: 2%;
+}
+
+#parametragesTable_filter {
+    float: right;
+    margin-bottom: 1%;
+}
+
+.dt-buttons >.btn {
+    border: solid 1px black;
+    border-radius: 0;
+    width: 10em;
+}
+
+.bg-gray {
+    background-color: silver;
+}
+
+.btn-tab{
+    margin-left: 2.5%;
+    width: 2.5em;
 }

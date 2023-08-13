@@ -17,7 +17,7 @@ import { AnneeEnCoursComponent } from './components/annee-en-cours/annee-en-cour
 import { ProjectionsComponent } from './components/projections/projections.component';
 import { ParametragesComponent } from './components/parametrages/parametrages.component';
 import { AccueilContenuComponent } from './components/accueil-contenu/accueil-contenu.component';
-import { RequetesPilotagesMsComponent } from './components/requetes-pilotages-ms/requetes-pilotages-ms.component';
+import { RequetesPilotagesMsComponent } from './components/export-ms/export-ms.component';
 import { RapportDeSituationComponent } from './components/rapport-de-situation/rapport-de-situation.component';
 import { SuiviPrevisionnelComponent } from './components/suivi-previsionnel/suivi-previsionnel.component';
 
@@ -25,6 +25,12 @@ import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
 
 import { NgApexchartsModule } from "ng-apexcharts";
 import { ModalModule } from "./_modal/modal.module";
+import { PortefeuilleEmploisComponent } from './components/portefeuille-emplois/portefeuille-emplois.component';
+import { AnticipationFinDossierComponent } from './components/anticipation-fin-dossier/anticipation-fin-dossier.component';
+import { SuiviTrajectoireComponent } from './components/suivi-trajectoire/suivi-trajectoire.component';
+import { OptionsRectificationsComponent } from './components/options-rectifications/options-rectifications.component';
+import { CampagnesComponent } from './components/campagnes/campagnes.component';
+import { ArchivesComponent } from './components/archives/archives.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -51,6 +57,12 @@ const routes: Routes = [
         RequetesPilotagesMsComponent,
         RapportDeSituationComponent,
         SuiviPrevisionnelComponent,
+        PortefeuilleEmploisComponent,
+        AnticipationFinDossierComponent,
+        SuiviTrajectoireComponent,
+        OptionsRectificationsComponent,
+        CampagnesComponent,
+        ArchivesComponent,
     ],
     exports: [
         RouterModule
