@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.route.queryParams.subscribe(params => {
+    /*this.route.queryParams.subscribe(params => {
       const token = params['token'];
       if(token){
         this.storageService.saveUser(token);
@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
           this.router.navigate(['/accueil']);
         }
       }
-  });
+  });*/
   }
 
   onSubmit(): void {
