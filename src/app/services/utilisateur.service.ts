@@ -24,13 +24,13 @@ export class UtilisateurService {
     }
 
     public getUtilisateurs(): Observable<any> {
-        return this.http.get(URL_API + "/utilisateur/liste");
+        return this.http.get(URL_API + "/api/utilisateur/liste");
     }
 
     public saveUtilisateur(user: Utilisateur): Observable<any> {
         console.log(user);
         return this.http.post(
-            URL_API + '/utilisateur/inscription',
+            URL_API + '/api/utilisateur/inscription',
             {
                 "username": user.username,
                 "password": user.password,

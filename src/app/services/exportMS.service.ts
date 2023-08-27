@@ -15,19 +15,15 @@ const httpOptions = {
 @Injectable({
     providedIn: 'root'
 })
-export class LoginService {
+export class ExportMSService {
 
     constructor(
         private http: HttpClient
     ) { }
 
-    login(username: string, password: string): Observable<any> {
-        return this.http.post(
-            URL_API + '/api/utilisateur/connexion',
-            {
-                username,
-                password
-            },
+    getRequetePMS(): Observable<any> {
+        return this.http.get(
+            URL_API + '/nomenclature/listePms/',
             httpOptions
         );
     }

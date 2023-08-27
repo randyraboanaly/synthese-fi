@@ -5,55 +5,16 @@
         <div class="row">
             <div class="col-sm-12">
                 <table class="table">
-                    <tr>
-                        <td class="w-20 pad-1">Suivi des emplois :</td>
+                    <tr *ngFor="let requetePms of requetePmss">
+                        <td class="w-20 pad-1">{{ requetePms.theme }} : </td>
                         <td class="w-50">
-                            <select class="form-select no-border-radius">
-                                <option>Suivi des ETPT/ETPR</option>
+                            <select class="form-select no-border-radius" [(ngModel)]="requetePms.selectedElement">
+                                <option *ngFor="let element of requetePms.elementsRequete" [ngValue]="element">{{ element.lien }}</option>
                             </select>
                         </td>
-                        <td><button class="btn btn-outline-secondary w-25 no-border-radius">Lancer</button></td>
+                        <td><button class="btn btn-outline-secondary w-25 no-border-radius" (click)="lancerRequete(requetePms.selectedElement)">Lancer</button></td>
                     </tr>
-                    <tr>
-                        <td class="pad-1">Prévisionnel :</td>
-                        <td>
-                            <select class="form-select no-border-radius">
-                                <option>Impact MS des avancements échelon</option>
-                            </select>
-                        </td>
-                        <td><button class="btn btn-outline-secondary w-25 no-border-radius">Lancer</button></td>
-                    </tr>
-                    <tr>
-                        <td class="pad-1">Suivi des dépenses :</td>
-                        <td>
-                            <select class="form-select no-border-radius">
-                                <option>Suivi des dépenses de masse salariale par imputation</option>
-                                <option>Suivi des dépenses de masse salariale par type de population</option>
-                            </select>
-                        </td>
-                        <td><button class="btn btn-outline-secondary w-25 no-border-radius">Lancer</button></td>
-                    </tr>
-                    <tr>
-                        <td class="pad-1">Tableau croisés :</td>
-                        <td>
-                            <select class="form-select no-border-radius">
-                                <option>Tableau croisé par élément de paie</option>
-                                <option>Tableau croisés par comptes PCE</option>
-                            </select>
-                        </td>
-                        <td><button class="btn btn-outline-secondary w-25 no-border-radius">Lancer</button></td>
-                    </tr>
-                    <tr>
-                        <td class="pad-1">Autres exports utiles à déterminer</td>
-                        <td>
-                            <select class="form-select no-border-radius">
-                                <option>Rapport de situation comparé</option>
-                                <option>Calcul GVT</option>
-                                <option>XXXXX</option>
-                            </select>
-                        </td>
-                        <td><button class="btn btn-outline-secondary w-25 no-border-radius">Lancer</button></td>
-                    </tr>
+                    
                 </table>
             </div>
         </div>
